@@ -1,0 +1,39 @@
+//- require("./img/img_x1.png")
+
+doctype html
+html(lang="en")
+  head
+    title= "Muhaparty.ru - официальный сайт вечеринки"
+    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js')
+    //- link(rel="stylesheet", href='node_modules/normalize.css/normalize.css')
+    //- script(src='node_modules/pixi.js/dist/pixi.min.js')
+  body
+    .img-t
+    .content
+      .logo
+          img.social(src= require("./img/muha_1.svg"))
+      .social
+        .inst
+          a.icon(href="https://www.instagram.com/muhaparty/" target="_blank") 
+            img(src= require("./img/inst.svg"))
+        .vk
+          a.icon(href="https://vk.com/muhapartyy" target="_blank")
+            img(src= require("./img/vk.svg"))
+    
+    .place
+      .date
+        img(src= require("./img/date.svg"))
+      .opera
+        a(href="http://operaconcert.club/contacts/" target="_blank")
+          img(src= require("./img/opera.svg"))
+    //- #jello-container.jello
+      //- if youAreUsingPug
+        p You are amazing
+      //- else
+        p Get on it!
+      //- p.
+        Pug is a terse and simple templating language with a
+        strong focus on performance and powerful features.
+    
+    //- <!-- Global site tag (gtag.js) - Google Analytics -->
+    script(async src='https://www.googletagmanager.com/gtag/js?id=UA-108763047-1')

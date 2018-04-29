@@ -13,16 +13,21 @@ let conf = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.js$/, 
 		loader: 'babel-loader',
 		//exclude: '/node_modules/' 
             },
 	    {
-		test: /\.css$/,
+		test: /\.scss$/,
 	        use: [
 		     'style-loader',
-		     'css-loader'		
+		     'css-loader',
+		     'sass-loader'		
 		]
+	    },
+	    {
+		test: /\.pug$/,
+		use: 'pug-loader'	
 	    }	
         ]
     }
